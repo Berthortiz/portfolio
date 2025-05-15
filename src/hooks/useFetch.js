@@ -22,6 +22,7 @@ export const useFetch = () => {
                 const json = await response.json()
                 const dataFetch = json
                 setData(dataFetch)
+                setLoading(false)
 
 
             } catch (err) {
@@ -29,7 +30,6 @@ export const useFetch = () => {
                 console.log(err);
             } finally {
 
-                setLoading(false)
             }
 
         }

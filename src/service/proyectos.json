@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
+        "image": "/src/assets/Web-1.png",
         "name_proyect": "Maria Martell - Página para agente inmobiliario",
-        "descripcion": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
-        "tecnologias": [
+        "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
+        "technologies": [
             {
-                "name": "wordpress",
+                "name": "Wordpress",
                 "icon": "/src/assets/icon-wordpress.svg"
             },
             {
                 "name": "Elementor",
-                "icon": "/src/assets/icon-wordpress.svg"
+                "icon": "/src/assets/icon-elementor.png"
             }
         ],
-        "imagen": "/src/assets/Web-1.png",
         "buttons": [
             {
                 "name": "Ver Página",
@@ -29,11 +29,12 @@
     },
     {
         "id": 2,
+        "image": "/src/assets/Web-1.png",
         "name_proyect": "Fgctremites - Página asistencia migratoria",
-        "descripcion": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
-        "tecnologias": [
+        "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
+        "technologies": [
             {
-                "name": "wordpress",
+                "name": "Wordpress",
                 "icon": "/src/assets/icon-wordpress.svg"
             },
             {
@@ -41,7 +42,6 @@
                 "icon": "/src/assets/icon-wordpress.svg"
             }
         ],
-        "imagen": "/src/assets/Web-1.png",
         "buttons": [
             {
                 "name": "Ver Página",

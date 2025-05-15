@@ -1,11 +1,23 @@
 import { useFetch } from "../hooks/useFetch"
 import ButtonWithIcon from "./ButtonWithIcon"
+import { IconElemetor, IconWordpress } from "./IconSVG";
 
 
 
 export default function SectionProyectsHome() {
 
   const { data, loading, error } = useFetch()
+  if (loading) {
+    return (
+      <h1>Cargando proyectos...</h1>)
+  }
+
+  if (error) {
+    return (
+      <h1>Algo salió mal</h1>
+    )
+  }
+
 
   console.log(data);
 
@@ -13,13 +25,10 @@ export default function SectionProyectsHome() {
   return (
     <article className="" >
       <h2 className="text-4xl p-3">Proyectos Web</h2>
-      <p className="text-2xl text-gray-400 pb-18">Estas paginas an sido creadas por mi para alguno de mis clientes</p>
-
+      <p className="text-2xl text-gray-400 pb-18">Estas páginas han sido creadas por mí para algunos de mis clientes</p>
 
       {
         data?.map((item) => {
-
-
 
           return (
             <section key={item.id} className="flex gap-10 px-18">
@@ -30,31 +39,35 @@ export default function SectionProyectsHome() {
               </div>
               <div className="w-[50%] text-left flex flex-col gap-2" >
                 <h2 className="text-3xl">{item.name_proyect} </h2>
-                <div className="flex items-center gap-3.5 text-lg">
-                  <span className="text-[var(--text-grey-custom)]">Creada con:</span>
+                <div className="text-[var(--text-grey-custom)] flex items-center gap-3.5 text-lg">
+                  <span className="">Creada con:</span>
+                  <ul className="flex items-center gap-4">
 
-                  <div className="flex items-center gap-2 ">
-                    <p className="text-gray-300 ">WordPress</p>
-                    {/* <IconWordpress /> */}
+                    {
+                      item.technologies?.map((item, index) => {
+                        return (
+                          <li key={`technologie-${index}`} className="flex items-center gap-2">
+                            <p>{item.name}</p>
+                            <img src={`${item.icon}`} />
 
-                  </div>
-                  <div className="flex items-center gap-2 ">
-                    <p className="text-gray-300">Elementor</p>
-                    {/* <IconElemetor /> */}
 
-                  </div>
+                          </li>
+
+                        )
+                      }
+                      )}
+                  </ul>
 
                 </div>
-                <p>Te ayudamos a encontrar propiedades que se ajusten a tus necesidades y presupuesto con
-                  Asesoría en Financiamiento
+                <p>
+                  {item.description}
                 </p>
-                <div className="pt-4">
-
+                <div className="pt-4 flex  gap-4">
                   {
-                    item.buttons?.map((itemBTN) => {
+                    item.buttons?.map((itemBTN, index) => {
                       return (
 
-                        <ButtonWithIcon link="#" icon={`${itemBTN.icon}`} text={`${itemBTN.name}`}></ButtonWithIcon>
+                        <ButtonWithIcon key={`itemBTN-${index}`} link="#" icon={`${itemBTN.icon}`} text={`${itemBTN.name}`}></ButtonWithIcon>
 
                       )
                     })
