@@ -1,0 +1,25 @@
+body>* {}
+
+.bg-gradiente-circle {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.bg-gradiente-circle::before {
+    --size-bg-gradiente-circle: 70em;
+    --color-bg-gradiente-circle: hsl(216, 100%, 50%, 30%);
+    width: var(--size-bg-gradiente-circle);
+    height: var(--size-bg-gradiente-circle);
+    background-image: radial-gradient(ellipse 50% 50% at 50% 50%,
+            var(--color-bg-gradiente-circle) 20%,
+            transparent);
+    border-radius: 50%;
+    content: "";
+    top: -110%;
+    left: calc(50% - calc(var(--size-bg-gradiente-circle) / 2));
+    position: absolute;
+    z-index: -1;
+}

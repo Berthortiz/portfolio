@@ -1,15 +1,22 @@
 
 export default function NavMenu() {
   return (
-    <header className="flex gap-7 px-8 py-3 fixed bg-black left-1/2 top-16 transform -translate-1/2 border-2 border-gray-700 rounded-4xl ">
-      <a href="/" className=""> <img src="/src/assets/logo-2.svg" /></a>
-      <nav>
-        <ul className="flex  text-[1.2em] gap-12">
+    <header className="w-full flex justify-between gap-7 absolute left-1/2 -translate-x-1/2 z-20 px-14 py-5 ">
+      <div className="w-1/3 flex justify-start " >
+
+        <a href="/" className=""> <img src="/src/assets/logo-2.svg" /></a>
+      </div>
+      <nav className="w-1/3 flex flex-col justify-center ">
+        <ul className="flex justify-center text-[1.2em] gap-12">
           <li className="">Inicio</li>
           <li>Proyectos</li>
           <li>Contacto</li>
         </ul>
       </nav>
+      <div className="w-1/3 flex justify-end ">
+
+        <a href="#" className="bg-[var(--primary-color)] pt-1.5 pb-2 px-6 rounded-3xl  ">Contáctame</a>
+      </div>
     </header>
   )
 

@@ -23,7 +23,7 @@ export default function SectionProyectsHome() {
 
 
   return (
-    <article className="" >
+    <article className="flex flex-col gap-3" >
       <h2 className="text-4xl p-3">Proyectos Web</h2>
       <p className="text-2xl text-gray-400 pb-18">Estas páginas han sido creadas por mí para algunos de mis clientes</p>
 
@@ -31,13 +31,13 @@ export default function SectionProyectsHome() {
         data?.map((item) => {
 
           return (
-            <section key={item.id} className="flex gap-10 px-18">
-              <div className="w-[45%] flex justify-center" >
+            <section key={item.id} className="flex gap-10 px-18 pb-12 ">
+              <div className="w-[45%] flex justify-center rounded-3xl overflow-hidden  " >
 
-                <img src="/src/assets/Web-1.png" alt="" className="w-full aspect-video object-contain" />
+                <img src="/src/assets/Web-1.png" alt="" className="w-full object-contain  " />
 
               </div>
-              <div className="w-[50%] text-left flex flex-col gap-2" >
+              <div className="w-[50%] text-left flex flex-col gap-2 pt-3.5" >
                 <h2 className="text-3xl">{item.name_proyect} </h2>
                 <div className="text-[var(--text-grey-custom)] flex items-center gap-3.5 text-lg">
                   <span className="">Creada con:</span>

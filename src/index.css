@@ -3,7 +3,8 @@
 :root {
   --primary-color: #0051FF;
   /* --primary-color: hsl(244, 100%, 66%); */
-  --body-bg: hsl(0, 0%, 4%);
+  --body-bg: rgb(0, 0, 0);
+
   --text-grey-custom: hsl(0, 0%, 45%);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,8 +26,9 @@
 
 body {
   background-color: var(--body-bg);
-  margin: 0;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
