@@ -49,17 +49,14 @@ export default function SectionProyectsHome() {
                           <li key={`technologie-${index}`} className="flex items-center gap-2">
                             <p>{item.name}</p>
                             <img src={`${item.icon}`} />
-
-
                           </li>
-
                         )
                       }
                       )}
                   </ul>
 
                 </div>
-                <p>
+                <p className="text-[var(--color-text-p)]" >
                   {item.description}
                 </p>
                 <div className="pt-4 flex  gap-4">

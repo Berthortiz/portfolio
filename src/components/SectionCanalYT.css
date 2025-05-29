@@ -1,0 +1,85 @@
+.fade-in {
+    opacity: 0;
+    /* Inicialmente invisible */
+    animation: fadeIn .4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* gradientes circle */
+.gradiente-circle-red-yt::before {
+    content: "";
+    --gradiente-circle-yt: 700px;
+    width: var(--gradiente-circle-yt);
+    height: var(--gradiente-circle-yt);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 0, 0, 0.137) 10%, transparent 75%);
+    position: absolute;
+    left: -150px;
+    z-index: -1;
+}
+
+.gradiente-circle-blue-yt::after {
+
+    content: "";
+    --gradiente-circle-blue-yt: 700px;
+
+    width: var(--gradiente-circle-blue-yt);
+    height: var(--gradiente-circle-blue-yt);
+    background:
+        radial-gradient(circle at 50% 50%, #0051FF60 10%, transparent 70%);
+    position: absolute;
+    bottom: -100px;
+    left: -250px;
+    z-index: -1;
+    animation: animateteCircle1 7.4s ease-in-out infinite forwards;
+
+
+}
+
+.gradiente-circle-blue-yt::before {
+
+    content: "";
+    --gradiente-circle-blue-yt: 700px;
+
+    width: var(--gradiente-circle-blue-yt);
+    height: var(--gradiente-circle-blue-yt);
+    background:
+        radial-gradient(circle at 50% 50%, #0051FF60 10%, transparent 70%);
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    animation: animateteCircle2 7.4s ease-in-out infinite forwards;
+}
+
+@keyframes animateteCircle2 {
+
+    0% {
+        top: -100px;
+    }
+
+    50% {
+        top: -200px;
+    }
+
+}
+
+@keyframes animateteCircle1 {
+
+    0% {
+
+        bottom: -100px;
+    }
+
+    50% {
+        bottom: -200px;
+    }
+
+}

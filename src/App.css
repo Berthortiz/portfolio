@@ -1,11 +1,27 @@
 #root {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   /* justify-content: center; */
   position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
   /* padding: 2rem; */
+
   text-align: center;
+}
+
+.ft-icon-react {
+  animation: rotate-react 8.4s ease-in-out infinite forwards;
+}
+
+@keyframes rotate-react {
+
+  0% {
+    transform: rotate(0);
+  }
+
+
+  50% {
+    transform: rotate(180deg);
+
+  }
 }

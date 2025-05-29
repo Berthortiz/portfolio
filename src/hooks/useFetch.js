@@ -28,8 +28,6 @@ export const useFetch = () => {
             } catch (err) {
                 setError(err)
                 console.log(err);
-            } finally {
-
             }
 
         }
