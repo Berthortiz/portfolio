@@ -4,9 +4,9 @@ import { IconElemetor, IconGithub } from "./IconSVG"
 
 export default function HeroHome() {
 	return (
-		<main className="bg-gradiente-circle flex flex-col gap-6 pt-52 pb-40 text-white ">
+		<main className="bg-gradiente-circle flex flex-col gap-6 pt-52 pb-40 max-sm:text-[16px] max-sm:text-amber-400  ">
 			<div className="" >
-				<h1 className="text-6xl font-bold relative">¡Hola! Soy Berth </h1>
+				<h1 className="text-6xl font-bold relative text-white ">¡Hola! Soy Berth </h1>
 			</div>
 			<p className="text-3xl font-light relative "> Puedo crear la Paginas web para tu negocio<br />
 				Portafolio, tienda online y más</p>

@@ -8,20 +8,3 @@
 
   text-align: center;
 }
-
-.ft-icon-react {
-  animation: rotate-react 8.4s ease-in-out infinite forwards;
-}
-
-@keyframes rotate-react {
-
-  0% {
-    transform: rotate(0);
-  }
-
-
-  50% {
-    transform: rotate(180deg);
-
-  }
-}

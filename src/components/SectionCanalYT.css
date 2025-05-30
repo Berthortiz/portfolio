@@ -16,6 +16,7 @@
 
 /* gradientes circle */
 .gradiente-circle-red-yt::before {
+
     content: "";
     --gradiente-circle-yt: 700px;
     width: var(--gradiente-circle-yt);
@@ -58,6 +59,19 @@
     z-index: -1;
     animation: animateteCircle2 7.4s ease-in-out infinite forwards;
 }
+
+@media (max-width: 767px) {
+    .gradiente-circle-blue-yt::before {
+        display: none;
+    }
+
+    .gradiente-circle-blue-yt::after {
+        display: none;
+    }
+}
+
+
+
 
 @keyframes animateteCircle2 {
 

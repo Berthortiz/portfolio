@@ -1,6 +1,6 @@
 export default function SectionAbout() {
     return (
-        <section className="flex justify-around py-10">
+        <section className="flex xl:flex-row xl:justify-between justify-around py-10 px-10 md:flex-col-reverse md:gap-y-4">
 
             <div className="flex flex-col justify-center text-left">
                 <h2 className="text-3xl font-bold">Un poco sobre mi  </h2>

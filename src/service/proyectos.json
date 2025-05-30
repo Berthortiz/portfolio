@@ -54,5 +54,33 @@
                 "icon": "/"
             }
         ]
+    },
+    {
+        "id": 3,
+        "image": "/src/assets/Web-1.png",
+        "name_proyect": "Fgctremites - Página asistencia migratoria",
+        "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
+        "technologies": [
+            {
+                "name": "Wordpress",
+                "icon": "/src/assets/icon-wordpress.svg"
+            },
+            {
+                "name": "Elementor",
+                "icon": "/src/assets/icon-wordpress.svg"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Ver Página",
+                "link": "#",
+                "icon": "/"
+            },
+            {
+                "name": "GitHub",
+                "link": "#",
+                "icon": "/"
+            }
+        ]
     }
 ]
