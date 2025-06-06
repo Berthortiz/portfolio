@@ -58,26 +58,32 @@ const SectionCanalYT = () => {
 
     return (
         <>
-            <section className="flex justify-around items-center h-[560px] pl-12 pr-16 md:justify-between ">
+            <section className="gradiente-circle-red-yt flex flex-col justify-center items-center gap-16 min-2xl: lg:gap-6 min-h-[660px] lg:min-h-[460px] px-8 pt-40 pb-40
+            md:min-h-[760px] md:items-center md:justify-center md:gap-10
+            lg:flex-row lg:justify-around">
 
-                <div className="gradiente-circle-red-yt flex flex-col justify-center items-start gap-1.5 relative md:w-[50%]" >
-                    <h1 className="text-4xl pb-2 font-semibold "> Canal de Youtube</h1>
-                    <p className="text-start pb-4 text-[var(--color-text-p)] md:w-fit ">Un canal donde subo contendió sobre creación de Sitios web, WordPress y Elementor.</p>
-                    <a href="https://www.youtube.com/@berthortiz" target="_blank" rel="noopener noreferrer" className="bg-red-600 pt-1.5 pb-2 px-6 rounded-3xl   ">Ver Videos</a>
 
+                <div className=" flex flex-col items-center lg:items-start gap-1.5 relative lg:justify-around lg:w-[40%] " >
+                    <div className="flex flex-col items-center lg:items-start">
+
+                        <h1 className="text-2xl pb-2 font-semibold md:text-5xl ">Canal de Youtube</h1>
+                        <p className="lg:text-start text-[1rem] lg:w-[48ch] pb-4 text-[var(--color-text-p)] md:w-fit ">Un canal donde subo contendió sobre creación de Sitios web, WordPress y Elementor.</p>
+                        <a href="https://www.youtube.com/@berthortiz" target="_blank" rel="noopener noreferrer" className="bg-red-600 pt-1.5 pb-2 px-6 rounded-3xl w-fit"> <span className="text-[1rem]">Ver Videos</span></a>
+                    </div>
                 </div>
 
 
-                <div className="gradiente-circle-blue-yt before relative h-fit button-after flex flex-col justify-center md:w-[40%]  md:p">
-                    <button onClick={handleClickLefttYT} className=" absolute -left-14 top-1/2 -translate-y-1/2 md:-left-10 ">
+                <div className="gradiente-circle-blue-yt relative w-[80%] h-fit button-after flex flex-col items-center md:w-[75%] lg:w-[50%] ">
+                    <button onClick={handleClickLefttYT} className="-left-10 absolute lg:-left-0 top-1/2 -translate-y-1/2  ">
                         <img src="src/assets/Polygon left.svg" alt="" />
                     </button>
 
                     <a href="https://www.youtube.com/@berthortiz" target="_blank" rel="noopener noreferrer">
-                        <img className={`${loaderImage ? "fade-in" : ""}  `} src={imagesYT[imgSlide]} alt="" />
+                        <img className={`${loaderImage ? "fade-in" : ""} w-full`} src={imagesYT[imgSlide]} alt="Mi canal de YouTube"
+                        />
                     </a>
 
-                    <button onClick={handleClickRightYT} className=" absolute -right-14 top-1/2 -translate-y-1/2  md:-right-10 ">
+                    <button onClick={handleClickRightYT} className=" absolute -right-10 lg:-right-0 top-1/2 -translate-y-1/2  ">
                         <img src="src\assets\Polygon rigth.svg" alt="" />
                     </button>
                 </div>

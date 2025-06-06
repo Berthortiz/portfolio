@@ -4,18 +4,69 @@
     animation: fadeIn .4s ease-in-out forwards;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+.gradiente-circle-red-yt {
+    background:
+        /* blue */
+        radial-gradient(ellipse 50% 200px at 35% 60%, #0051FF70, transparent),
+        radial-gradient(ellipse 50% 150px at 89% 66%, #0051FF70, transparent);
+
+
+
+
+}
+
+
+@media (min-width: 768px) {
+    .gradiente-circle-red-yt {}
+}
+
+@media (min-width: 1024px) {
+    .gradiente-circle-red-yt {
+        background:
+            radial-gradient(ellipse 300px 300px at 25% 50%, rgba(255, 0, 0, 0.200) 1%, transparent) 30%;
+
+
+
     }
 
-    to {
-        opacity: 1;
+
+    .gradiente-circle-blue-yt::after {
+
+        content: "";
+        --gradiente-circle-blue-yt: 700px;
+
+        width: var(--gradiente-circle-blue-yt);
+        height: var(--gradiente-circle-blue-yt);
+        background:
+            radial-gradient(circle at 50% 50%, #0051FF60 10%, transparent 70%);
+        position: absolute;
+        bottom: -100px;
+        left: -250px;
+        z-index: -1;
+        animation: animateteCircle1 3.4s ease-in-out infinite forwards;
+
+
+    }
+
+    .gradiente-circle-blue-yt::before {
+
+        content: "";
+        --gradiente-circle-blue-yt: 700px;
+
+        width: var(--gradiente-circle-blue-yt);
+        height: var(--gradiente-circle-blue-yt);
+        background:
+            radial-gradient(circle at 50% 50%, #0051FF60 10%, transparent 70%);
+        position: absolute;
+        top: -100px;
+        z-index: -1;
+        animation: animateteCircle2 4.4s ease-in-out infinite forwards;
     }
 }
 
+
 /* gradientes circle */
-.gradiente-circle-red-yt::before {
+/* .gradiente-circle-red-yt::before {
 
     content: "";
     --gradiente-circle-yt: 700px;
@@ -58,7 +109,19 @@
     top: -100px;
     z-index: -1;
     animation: animateteCircle2 7.4s ease-in-out infinite forwards;
+} */
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 
 @media (max-width: 767px) {
     .gradiente-circle-blue-yt::before {
@@ -69,9 +132,6 @@
         display: none;
     }
 }
-
-
-
 
 @keyframes animateteCircle2 {
 

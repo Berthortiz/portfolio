@@ -1,0 +1,37 @@
+:root {}
+
+.gradiente__service {
+    background:
+        radial-gradient(ellipse 300px 300px at 50% 18%, var(--bg-gradiente-circle), transparent),
+        radial-gradient(ellipse 300px 300px at 90% 52%, var(--bg-gradiente-circle), transparent),
+        radial-gradient(ellipse 300px 300px at 25% 74%, var(--bg-gradiente-circle), transparent);
+}
+
+/* Para tablets (Tailwind md: ~768px) */
+@media (min-width: 768px) {
+    .gradiente__service {
+        background:
+            radial-gradient(ellipse 250px 250px at 30% 20%, var(--bg-gradiente-circle), transparent),
+            radial-gradient(ellipse 250px 250px at 90% 50%, var(--bg-gradiente-circle), transparent),
+            radial-gradient(ellipse 250px 250px at 30% 80%, var(--bg-gradiente-circle), transparent);
+    }
+}
+
+/* @media (min-width: 1024px) {
+    .gradiente__service {
+        background:
+            radial-gradient(ellipse 250px 250px at 20% 45%, var(--bg-gradiente-circle), transparent),
+            radial-gradient(ellipse 250px 250px at 50% 45%, var(--bg-gradiente-circle), transparent),
+            radial-gradient(ellipse 250px 250px at 85% 45%, var(--bg-gradiente-circle), transparent);
+    }
+} */
+
+@media (min-width: 1024px) {
+    .gradiente__service {
+        background:
+            radial-gradient(ellipse 280px 280px at 26% 55%, var(--bg-gradiente-circle), transparent),
+            radial-gradient(ellipse 250px 250px at 50% 55%, var(--bg-gradiente-circle), transparent),
+
+            radial-gradient(ellipse 280px 280px at 75% 55%, var(--bg-gradiente-circle), transparent);
+    }
+}

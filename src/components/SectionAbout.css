@@ -1,0 +1,28 @@
+.gradiente__about {
+    background:
+        radial-gradient(ellipse 300px 300px at 50% 40%, var(--bg-gradiente-circle) 20%, transparent);
+}
+
+@media (min-width:768px) {
+
+
+    .gradiente__about {
+        /* backdrop-filter: blur(20px); */
+        background:
+
+            radial-gradient(ellipse 300px 200px at 30% 50%, var(--bg-gradiente-circle) 10%, transparent);
+
+    }
+}
+
+@media (min-width: 1024px) {
+
+
+    .gradiente__about {
+        /* backdrop-filter: blur(20px); */
+        background:
+
+            radial-gradient(ellipse 300px 200px at 25% 50%, var(--bg-gradiente-circle) 10%, transparent);
+
+    }
+}
