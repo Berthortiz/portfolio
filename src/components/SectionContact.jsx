@@ -1,5 +1,3 @@
-import SectionAbout from "./sectionAbout";
-
 export default function SectionContact() {
     return (
         <section id="contact-home" className="flex flex-col justify-center gap-6 min-h-[550px] relative">
