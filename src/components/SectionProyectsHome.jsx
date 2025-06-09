@@ -1,6 +1,5 @@
 import { useFetch } from "../hooks/useFetch"
 import ButtonWithIcon from "./ButtonWithIcon"
-import { IconElemetor, IconWordpress } from "./IconSVG";
 
 export default function SectionProyectsHome() {
   const { data, loading, error } = useFetch()

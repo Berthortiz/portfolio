@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "image": "/fgcconsulting.png",
+        "name_proyect": "Fgctremites - Página asistencia migratoria",
+        "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
+        "technologies": [
+            {
+                "name": "Wordpress",
+                "icon": "/icon-wordpress.svg"
+            },
+            {
+                "name": "Elementor",
+                "icon": "/icon-wordpress.svg"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Ver Página",
+                "link": "https://fgctramites.com",
+                "icon": "/icon-link.svg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "image": "/mariamartel.png",
+        "name_proyect": "Maria Martell - Página para agente inmobiliario",
+        "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
+        "technologies": [
+            {
+                "name": "Wordpress",
+                "icon": "/icon-wordpress.svg"
+            },
+            {
+                "name": "Elementor",
+                "icon": "/icon-elementor.png"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Ver Página",
+                "link": "https://marialerealtor.com/",
+                "icon": "/icon-link.svg"
+            }
+        ]
+    }
+]
