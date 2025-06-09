@@ -1,4 +1,6 @@
 name = "portafolio-web"
 compatibility_date = "2025-06-08"
-assets = { directory = "./dist" }
+pages_build_output_dir = "./dist"
+
+
 
