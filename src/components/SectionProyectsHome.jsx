@@ -44,8 +44,8 @@ export default function SectionProyectsHome() {
                 <div className="text-[var(--text-grey-custom)] flex items-center gap-3.5 text-lg">
                   <ul className="flex items-center text-[16px] flex-wrap gap-x-2 md:gap-y-1 md:gap-x-2 md:text-[1rem]">
                     <li>Creada con:</li>
-                    {item.technologies?.map((tech) => (
-                      <li key={`technologie-${idProyect}`} className="flex items-center gap-2">
+                    {item.technologies?.map((tech, index) => (
+                      <li key={`technologie-${index}`} className="flex items-center gap-2">
                         <p>{tech.name}</p>
                         <img src={`${tech.icon}`} />
                       </li>
