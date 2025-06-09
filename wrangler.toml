@@ -1,6 +1,6 @@
-name = "portafolio-web"
+name = "portfolio"
 compatibility_date = "2025-06-08"
 pages_build_output_dir = "./dist"
-
+workers_dev = true
 
 
