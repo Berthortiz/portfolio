@@ -14,7 +14,7 @@ export const useFetch = () => {
         const getFetch = async () => {
 
             try {
-                const response = await fetch("/src/service/proyectos.json")
+                const response = await fetch("/service/proyectos.json")
                 if (!response.ok) {
 
                     throw new Error("El fetch fallo")
