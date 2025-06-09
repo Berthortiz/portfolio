@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "image": "/src/assets/fgcconsulting.png",
+        "image": "/fgcconsulting.png",
         "name_proyect": "Fgctremites - Página asistencia migratoria",
         "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
         "technologies": [
             {
                 "name": "Wordpress",
-                "icon": "/src/assets/icon-wordpress.svg"
+                "icon": "/icon-wordpress.svg"
             },
             {
                 "name": "Elementor",
-                "icon": "/src/assets/icon-wordpress.svg"
+                "icon": "/icon-wordpress.svg"
             }
         ],
         "buttons": [
             {
                 "name": "Ver Página",
                 "link": "https://fgctramites.com",
-                "icon": "/src/assets/icon-link.svg"
+                "icon": "/icon-link.svg"
             }
         ]
     },
     {
         "id": 2,
-        "image": "/src/assets/mariamartel.png",
+        "image": "/mariamartel.png",
         "name_proyect": "Maria Martell - Página para agente inmobiliario",
         "description": "Sitio web diseñado para un agente inmobiliario, ofreciendo asesoría en financiamiento y opciones de propiedades.",
         "technologies": [
             {
                 "name": "Wordpress",
-                "icon": "/src/assets/icon-wordpress.svg"
+                "icon": "/icon-wordpress.svg"
             },
             {
                 "name": "Elementor",
-                "icon": "/src/assets/icon-elementor.png"
+                "icon": "/icon-elementor.png"
             }
         ],
         "buttons": [
             {
                 "name": "Ver Página",
                 "link": "https://marialerealtor.com/",
-                "icon": "/src/assets/icon-link.svg"
+                "icon": "/icon-link.svg"
             }
         ]
     }
