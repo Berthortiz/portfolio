@@ -43,7 +43,7 @@ export default function NavMenu() {
             className="w-16 "
             src="/logo-2.svg" /></a>
         </div>
-        <ul onClick={handleRemoveNavMovil} className="flex flex-col pb-14 text-zinc-400 w-full gap-3 text-[1em] lg:flex-row lg:justify-center lg:gap-12 lg:relative lg:p-0 lg:pb-0 lg:text-[1em] ">
+        <ul onClick={handleRemoveNavMovil} className="flex flex-col pb-14 text-blue-100 w-full gap-3 text-[1em] lg:flex-row lg:justify-center lg:gap-12 lg:relative lg:p-0 lg:pb-0 lg:text-[1em] ">
 
           <li >  <a className="linkNavMenu" href="/">  Inicio </a></li>
           <li >  <a className="linkNavMenu" href="#proyects">Proyectos </a>  </li>

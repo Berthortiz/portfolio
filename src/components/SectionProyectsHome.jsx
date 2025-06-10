@@ -16,7 +16,7 @@ export default function SectionProyectsHome() {
 
   return (
     <article className="gap-3 px-6 lg:pt-16 " id="proyects">
-      <h2 className="text-2xl font-black p-3 md:text-3xl lg:text-4xl">Proyectos Web</h2>
+      <h2 className="text-2xl font-black p-3 md:text-3xl lg:text-4xl">Proyectos Web que He Creado</h2>
       <p className=" text-gray-400 pb-14 md:pb-10 lg:text-2xl lg:pb-18">
         Estas páginas han sido creadas por mí para algunos de mis clientes
       </p>
