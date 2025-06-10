@@ -48,7 +48,7 @@ export default function NavMenu() {
           <li >  <a className="linkNavMenu" href="/">  Inicio </a></li>
           <li >  <a className="linkNavMenu" href="#proyects">Proyectos </a>  </li>
           <li >  <a className="linkNavMenu" href="#about">Sobre Mí </a>  </li>
-          <li >  <a className="linkNavMenu" href="#contact-home">Contacto</a> </li>
+          <li >  <a className="linkNavMenu" href="#contact">Contacto</a> </li>
           <li className="lg:hidden">
             <div className="pt-4 flex justify-center lg:flex lg:justify-end text-[14px] text-amber-50 lg:w-1/3 ">
               <a href="#" className="bg-[var(--primary-color)] pt-1.5 pb-2 px-6 rounded-3xl ">Contáctame
