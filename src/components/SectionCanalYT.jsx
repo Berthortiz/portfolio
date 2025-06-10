@@ -58,7 +58,7 @@ const SectionCanalYT = () => {
 
     return (
         <>
-            <section id="contact" className="gradiente-circle-red-yt flex flex-col justify-center items-center gap-16 min-2xl: lg:gap-6 min-h-[660px] lg:min-h-[460px] px-8 pt-40 pb-40
+            <section className="gradiente-circle-red-yt flex flex-col justify-center items-center gap-16 min-2xl: lg:gap-6 min-h-[660px] lg:min-h-[460px] px-8 pt-40 pb-40
             md:min-h-[760px] md:items-center md:justify-center md:gap-10
             lg:flex-row lg:justify-around"
             >
