@@ -6,7 +6,6 @@ export default function NavMenu() {
 
   const [openNav, setOpenNav] = useState(false)
 
-
   useEffect(() => {
     const handleResize = () => {
       setOpenNav(false)
@@ -22,10 +21,8 @@ export default function NavMenu() {
     setOpenNav(!openNav)
   }
   const handleRemoveNavMovil = (event) => {
-    if (event.target.tagName === "A" && !event.target.className.contains("linkNavMenu")) {
+    if (event.target.tagName === "A" && event.target.className === "linkNavMenu")
       setOpenNav(false)
-    }
-
   }
 
 
@@ -36,7 +33,7 @@ export default function NavMenu() {
     >
       <div className="w-full flex justify-start lg:w-[15%]" >
 
-        <a href="/" className="w-10"> <img src="/src/assets/logo-2.svg" /></a>
+        <a href="/" className="w-10"> <img src="/logo-2.svg" /></a>
       </div>
       <nav className={`${openNav ? "flex " : "hidden"} 
        flex-col min-h-[100vh] z-10 justify-start fixed top-0 left-0 right-20 p-18 bg-gray-900/80 lg:bg-gray-900/0 backdrop-blur-lg lg:flex lg:justify-center lg:relative lg:min-h-auto lg:p-0 lg:w-full `} >
@@ -44,15 +41,14 @@ export default function NavMenu() {
 
           <a href="/" className=""> <img
             className="w-16 "
-            src="/src/assets/logo-2.svg" /></a>
+            src="/logo-2.svg" /></a>
         </div>
-        <ul onChange={handleRemoveNavMovil} className="flex flex-col pb-14 text-zinc-400 w-full gap-3 text-[1em] lg:flex-row lg:justify-center lg:gap-12 lg:relative lg:p-0 lg:pb-0 lg:text-[1em] ">
+        <ul onClick={handleRemoveNavMovil} className="flex flex-col pb-14 text-zinc-400 w-full gap-3 text-[1em] lg:flex-row lg:justify-center lg:gap-12 lg:relative lg:p-0 lg:pb-0 lg:text-[1em] ">
 
-          <li className="linkNavMenu"><a href="/">  Inicio </a></li>
-          <li className="linkNavMenu" >  <a href="#proyects">Proyectos </a>  </li>
-          <li className="linkNavMenu" >  <a href="#about">Sobre Mí </a>  </li>
-
-          <li className="linkNavMenu"> <a href="#contact-home">Contacto</a> </li>
+          <li >  <a className="linkNavMenu" href="/">  Inicio </a></li>
+          <li >  <a className="linkNavMenu" href="#proyects">Proyectos </a>  </li>
+          <li >  <a className="linkNavMenu" href="#about">Sobre Mí </a>  </li>
+          <li >  <a className="linkNavMenu" href="#contact-home">Contacto</a> </li>
           <li className="lg:hidden">
             <div className="pt-4 flex justify-center lg:flex lg:justify-end text-[14px] text-amber-50 lg:w-1/3 ">
               <a href="#" className="bg-[var(--primary-color)] pt-1.5 pb-2 px-6 rounded-3xl ">Contáctame
@@ -70,17 +66,17 @@ export default function NavMenu() {
             <div className="flex justify-center pt-4 gap-8 [&_img]:w-6">
               <span>
                 <a href="https://www.instagram.com/berth_ortiz/" target="_blank" rel="noopener noreferrer">
-                  <img src="src/assets/icon-instagram.svg" alt="Instagram" />
+                  <img src="/icon-instagram.svg" alt="Instagram" />
                 </a>
               </span>
               <span>
                 <a href="https://www.linkedin.com/in/berth-ortiz-dev/" target="_blank" rel="noopener noreferrer">
-                  <img src="src/assets/icon-linkeding.svg" alt="LinkedIn" />
+                  <img src="/icon-linkeding.svg" alt="LinkedIn" />
                 </a>
               </span>
               <span>
                 <a href="https://github.com/Berthortiz" target="_blank" rel="noopener noreferrer">
-                  <img src="src/assets/icon-github2.svg" alt="GitHub" />
+                  <img src="/icon-github2.svg" alt="GitHub" />
                 </a>
               </span>
             </div>
@@ -95,7 +91,13 @@ export default function NavMenu() {
 
       </nav>
       <div className="w-1/3 lg:flex justify-end hidden lg:text-[14px] lg:w-[15%]">
-        <a href="#" className="bg-[var(--primary-color)] pt-1.5 pb-2 px-6 rounded-3xl ">Contáctame</a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.link/ki29v4"
+          className="bg-[var(--primary-color)] pt-1.5 pb-2 px-6 rounded-3xl ">
+          WhatsApp
+        </a>
       </div>
       <button onClick={handleOpenNav} className="lg:hidden">
 

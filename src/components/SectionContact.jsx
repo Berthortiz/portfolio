@@ -1,6 +1,6 @@
 export default function SectionContact() {
     return (
-        <section id="contact-home" className="flex flex-col justify-center gap-6 min-h-[550px] relative">
+        <section id="contact" className="flex flex-col justify-center gap-6 min-h-[550px] relative">
             <h2 className="text-3xl font-bold pt-10 lg:text-4xl">Contacto</h2>
 
             <div className="line-SectionContact flex flex-col justify-around items-center gap-14 relative 
@@ -18,17 +18,17 @@ export default function SectionContact() {
                     <div className="flex gap-8 [&_img]:w-6">
                         <span>
                             <a href="https://www.instagram.com/berth_ortiz/" target="_blank" rel="noopener noreferrer">
-                                <img src="src/assets/icon-instagram.svg" alt="Instagram" />
+                                <img src="/icon-instagram.svg" alt="Instagram" />
                             </a>
                         </span>
                         <span>
                             <a href="https://www.linkedin.com/in/berth-ortiz-dev/" target="_blank" rel="noopener noreferrer">
-                                <img src="src/assets/icon-linkeding.svg" alt="LinkedIn" />
+                                <img src="/icon-linkeding.svg" alt="LinkedIn" />
                             </a>
                         </span>
                         <span>
                             <a href="https://github.com/Berthortiz" target="_blank" rel="noopener noreferrer">
-                                <img src="src/assets/icon-github2.svg" alt="GitHub" />
+                                <img src="/icon-github2.svg" alt="GitHub" />
                             </a>
                         </span>
                     </div>

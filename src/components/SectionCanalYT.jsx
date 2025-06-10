@@ -44,9 +44,9 @@ const SectionCanalYT = () => {
 
 
     const imagesYT = [
-        "src/assets/berth-img-yt.png",
-        "src/assets/berth-img-yt-2.png",
-        "src/assets/berth-img-yt-3.png"
+        "/berth-img-yt.png",
+        "/berth-img-yt-2.png",
+        "/berth-img-yt-3.png"
 
     ]
 
@@ -75,7 +75,7 @@ const SectionCanalYT = () => {
 
                 <div className="gradiente-circle-blue-yt relative w-[80%] h-fit button-after flex flex-col items-center md:w-[75%] lg:w-[50%] ">
                     <button onClick={handleClickLefttYT} className="-left-10 absolute lg:-left-0 top-1/2 -translate-y-1/2  ">
-                        <img src="src/assets/Polygon left.svg" alt="" />
+                        <img src="/Polygon left.svg" alt="" />
                     </button>
 
                     <a href="https://www.youtube.com/@berthortiz" target="_blank" rel="noopener noreferrer">
@@ -84,7 +84,7 @@ const SectionCanalYT = () => {
                     </a>
 
                     <button onClick={handleClickRightYT} className=" absolute -right-10 lg:-right-0 top-1/2 -translate-y-1/2  ">
-                        <img src="src\assets\Polygon rigth.svg" alt="" />
+                        <img src="/Polygon rigth.svg" alt="" />
                     </button>
                 </div>
             </section>

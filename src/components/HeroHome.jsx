@@ -12,8 +12,11 @@ export default function HeroHome() {
 				Portafolio, tienda online y más</p>
 			<div className="flex justify-center gap-4 text-[.8rem] pt-3">
 
-				<a href="#" className="bg-[var(--primary-color)] lg:pt-1.5 pt-2.5 pb-2 px-6 rounded-3xl  ">Contáctame</a>
-				<ButtonWithIcon link="#" text="GitHub" icon="src\assets\icon-github.svg" />
+				<a href="#contact" className="bg-[var(--primary-color)] lg:pt-1.5 pt-2.5 pb-2 px-6 rounded-3xl  ">
+					Contáctame
+
+				</a>
+				<ButtonWithIcon link="https://github.com/Berthortiz" text="GitHub" icon="/icon-github.svg" />
 
 			</div>
 		</main>
