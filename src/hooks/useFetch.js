@@ -22,12 +22,15 @@ export const useFetch = () => {
                 const json = await response.json()
                 const dataFetch = json
                 setData(dataFetch)
+                setError(false)
                 setLoading(false)
+
+
+                console.log();
 
 
             } catch (err) {
                 setError(err)
-                console.log(err);
             }
 
         }

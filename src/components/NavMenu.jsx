@@ -7,6 +7,20 @@ export default function NavMenu() {
   const [openNav, setOpenNav] = useState(false)
 
   useEffect(() => {
+
+
+    // if (openNav) {
+    //   document.body.style.overflow = 'hidden'
+    //   document.body.style.height = '100vh'
+    //   // opcional, previene rebote en móviles
+    // } else {
+    //   document.body.style.overflow = ''
+    //   document.body.style.height = ''
+    // }
+
+
+
+
     const handleResize = () => {
       setOpenNav(false)
     }
@@ -14,6 +28,9 @@ export default function NavMenu() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+
+
+
 
   }, [])
 
@@ -27,7 +44,7 @@ export default function NavMenu() {
 
 
   return (
-    <header className={`${openNav ? "" : "before:hidden"} flex w-full justify-between absolute gap-7 p-6
+    <header className={`${openNav ? "" : "before:hidden"} overscroll-y-contain flex w-full justify-between absolute gap-7 p-6
                         z-20 lg:p-6 lg:before:hidden
                         before:w-[100vw] before:min-h-[100vh] before:backdrop-blur-xs  before:left-0 before:top-0 before:z-10 before:bg-black/70  before:fixed`}
     >
@@ -36,7 +53,7 @@ export default function NavMenu() {
         <a href="/" className="w-10"> <img src="/logo-2.svg" /></a>
       </div>
       <nav className={`${openNav ? "flex " : "hidden"} 
-       flex-col min-h-[100vh] z-10 justify-start fixed top-0 left-0 right-20 p-18 bg-gray-900/80 lg:bg-gray-900/0 backdrop-blur-lg lg:flex lg:justify-center lg:relative lg:min-h-auto lg:p-0 lg:w-full `} >
+         flex-col min-h-[100vh] z-10 justify-start fixed top-0 left-0 right-20 p-18 bg-gray-900/80 lg:bg-gray-900/0 backdrop-blur-lg lg:flex lg:justify-center lg:relative lg:min-h-auto lg:p-0 lg:w-full `} >
         <div className=" w-full flex justify-center pb-4 lg:justify-start lg:hidden lg:pb-0 lg:w-fit " >
 
           <a href="/" className=""> <img
